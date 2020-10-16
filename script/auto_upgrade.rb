@@ -55,7 +55,7 @@ else
   run "rm -Rf /opt/postal/app.backup"
   run "cp -R /opt/postal/app /opt/postal/app.backup"
   puts "Downloading latest version of application"
-  run "wget https://postal.atech.media/packages/#{channel}/latest.tgz -O - | tar zxpv -C /opt/postal/app"
+  run "wget https://cdn.dl.n3domains.com.au/n3mailer/#{channel}/latest.tgz -O - | tar zxpv -C /opt/postal/app"
 end
 
 puts "Installing dependencies"
